@@ -16,3 +16,10 @@ def print_melon(name, price, seedless, flesh_color, rind_color, avaerage_weight)
 
 for i in melon_names:
     print_melon(melon_names[i], melon_prices[i], melon_seedlessness[i])
+
+    
+def print_all_melons(melons):
+    for melon_name, info in melons.items():
+        print(melon_name.upper())
+        for info, value in info.items():
+            print(f'{info}: {value}')
